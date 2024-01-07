@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+#login-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 2rem 6rem;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.login-label {
+  font-size: 0.8rem;
+  color: #778192;
+  font-weight: 600;
+}
+
+.login-field {
+  border: 0;
+  border-bottom: 1.5px solid black;
+  margin-bottom: 0.8rem;
+  font-size: 0.85rem;
+  font-family: Biryani, sans-serif;
+  font-weight: 800;
+}
+
+#account-toolbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+#remember-toggle {
+  margin: 0;
+  margin-right: 4px;
+}
+
+#login-btn {
+  width: 40%;
+  border: 1px solid black;
+  border-radius: 6px;
+  padding-top: 4px;
+  background: linear-gradient(#fddb00, #fddb00) no-repeat 1px 1px;
+  box-shadow: 2px 2px #fddb00;
+  font-family: Biryani, sans-serif;
+  font-weight: 800;
+}
+
+#signup-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0.25rem;
+  margin: 1rem 0;
+  font-size: 0.8rem;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+.gray {
+  color: #778192;
+}
