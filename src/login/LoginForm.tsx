@@ -22,7 +22,16 @@ export const LoginForm = () => {
       return;
     }
 
-    console.log(data);
+    if (
+      data.email !== localStorage.getItem("email") ||
+      data.password !== localStorage.getItem("password")
+    ) {
+      setError("root", {
+        type: "manual",
+        message: "Wrong login credentials",
+      });
+      return;
+    }
   };
 
   return (
