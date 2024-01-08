@@ -13,7 +13,8 @@
     "eslint-plugin-react": "^7.33.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-hook-form": "^7.49.2"
+    "react-hook-form": "^7.49.2",
+    "react-router-dom": "^6.21.1"
   },
   "devDependencies": {
     "@types/babel__generator": "^7.6.8",
@@ -29,6 +30,7 @@
     "eslint": "^8.55.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
+    "react-spinners": "^0.13.8",
     "typescript": "^5.2.2",
     "vite": "^5.0.8"
   }

@@ -1,5 +1,6 @@
 import { useForm, SubmitHandler } from "react-hook-form";
 import "./LoginForm.css";
+import { Link } from "react-router-dom";
 
 type Inputs = {
   email: string;
@@ -72,7 +73,9 @@ export const LoginForm = () => {
         <input id="login-btn" type="submit" value="Log In" />
         <div id="signup-container">
           <span className="gray">Don&apos;t have an account?</span>
-          <span className="bold">Sign Up</span>
+          <Link className="bold" to="/register">
+            Sign Up
+          </Link>
         </div>
       </form>
     </div>

@@ -2,7 +2,7 @@ import { LoginForm } from "./LoginForm";
 import "./Modal.css";
 import creditCardURL from "../assets/credit-card.png";
 
-export const Modal = () => {
+export const LoginModal = () => {
   return (
     <div className="login-modal">
       <div className="modal-left-half">
