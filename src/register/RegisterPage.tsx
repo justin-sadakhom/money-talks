@@ -8,7 +8,7 @@ export const RegisterPage = () => {
 
   useEffect(() => {
     const redirectTimeout = setTimeout(() => {
-      navigate("/");
+      navigate("/recovery");
     }, 3000);
 
     return () => clearTimeout(redirectTimeout);

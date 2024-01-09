@@ -6,6 +6,7 @@
   width: 80%;
   display: flex;
   flex-direction: row;
+  height: 500px;
 }
 
 .modal-left-half {

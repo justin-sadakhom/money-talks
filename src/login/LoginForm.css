@@ -7,6 +7,7 @@
   flex-direction: column;
   align-items: start;
   padding: 2rem 6rem;
+  width: 100%;
 }
 
 #login-form {
@@ -35,8 +36,7 @@
   flex-direction: row;
   justify-content: space-between;
   font-size: 0.8rem;
-  margin-top: 0.5rem;
-  margin-bottom: 1rem;
+  margin: 0.5rem 0;
   font-weight: 600;
 }
 
@@ -54,6 +54,7 @@
   box-shadow: 2px 2px #fddb00;
   font-family: Biryani, sans-serif;
   font-weight: 800;
+  margin-top: 0.5rem;
 }
 
 #signup-container {

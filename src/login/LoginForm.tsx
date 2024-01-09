@@ -68,7 +68,7 @@ export const LoginForm = () => {
             <input id="remember-toggle" type="checkbox" />
             <label htmlFor="remember-toggle">Remember Me</label>
           </span>
-          Forgot Password
+          <Link to="/recovery">Forgot Password</Link>
         </div>
         <input id="login-btn" type="submit" value="Log In" />
         <div id="signup-container">
