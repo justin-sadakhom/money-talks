@@ -45,7 +45,7 @@
   margin-right: 4px;
 }
 
-#login-btn {
+.login-btn {
   width: 40%;
   border: 1px solid black;
   border-radius: 6px;

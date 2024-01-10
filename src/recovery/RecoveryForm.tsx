@@ -78,7 +78,7 @@ export const RecoveryForm = () => {
           </select>
           {!confirmed && (
             <input
-              id="login-btn"
+              className="login-btn"
               type="button"
               value="Confirm"
               onClick={() => setConfirmed(true)}
@@ -121,7 +121,7 @@ export const RecoveryForm = () => {
                   />
                 </span>
               </div>
-              <input id="login-btn" type="submit" value="Recover" />
+              <input className="login-btn" type="submit" value="Recover" />
             </>
           )}
           <div id="signup-container">
