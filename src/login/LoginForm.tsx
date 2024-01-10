@@ -51,6 +51,7 @@ export const LoginForm = () => {
           id="email-field"
           className="login-field"
           type="email"
+          value={localStorage.getItem("email") || ""}
           {...(register("email"), { required: true })}
         />
         <label className="login-label" htmlFor="password-field">
@@ -60,12 +61,13 @@ export const LoginForm = () => {
           id="password-field"
           className="login-field"
           type="password"
+          value={localStorage.getItem("password") || ""}
           {...(register("password"), { required: true, minLength: 8 })}
         />
         {errors.root && <div className="error">Unable to login!</div>}
         <div id="account-toolbar" className="gray">
           <span id="remember-container">
-            <input id="remember-toggle" type="checkbox" />
+            <input id="remember-toggle" type="checkbox" checked />
             <label htmlFor="remember-toggle">Remember Me</label>
           </span>
           <Link to="/recovery">Forgot Password</Link>
