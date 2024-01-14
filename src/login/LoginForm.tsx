@@ -71,7 +71,7 @@ export const LoginForm = () => {
             className="login-field"
             type="email"
             defaultValue={localStorage.getItem("email") || ""}
-            {...(register("email"), { required: true })}
+            {...register("email", { required: true })}
           />
           <label className="login-label" htmlFor="password-field">
             Password
@@ -81,7 +81,7 @@ export const LoginForm = () => {
             className="login-field"
             type="password"
             defaultValue={localStorage.getItem("password") || ""}
-            {...(register("password"), { required: true, minLength: 8 })}
+            {...register("password", { required: true, minLength: 8 })}
           />
           {errors.root && <div className="error">Unable to login!</div>}
           <div id="account-toolbar" className="gray">

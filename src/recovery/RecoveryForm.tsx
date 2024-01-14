@@ -66,7 +66,7 @@ export const RecoveryForm = () => {
           <select
             id="email-field"
             className="login-field"
-            {...(register("email"), { required: true })}
+            {...register("email", { required: true })}
           >
             {emails.map((email) => {
               return (
@@ -93,8 +93,11 @@ export const RecoveryForm = () => {
                 id="card-num-field"
                 className="login-field"
                 type="text"
-                {...(register("cardNum"),
-                { required: true, minLength: 10, maxLength: 19 })}
+                {...register("cardNum", {
+                  required: true,
+                  minLength: 10,
+                  maxLength: 19,
+                })}
               />
               <div className="half-field-container">
                 <span className="half-field">
@@ -105,8 +108,11 @@ export const RecoveryForm = () => {
                     id="cvv-field"
                     className="login-field"
                     type="text"
-                    {...(register("cvv"),
-                    { required: true, minLength: 3, maxLength: 4 })}
+                    {...register("cvv", {
+                      required: true,
+                      minLength: 3,
+                      maxLength: 4,
+                    })}
                   />
                 </span>
                 <span className="half-field">
@@ -117,7 +123,7 @@ export const RecoveryForm = () => {
                     id="expiry-field"
                     className="login-field"
                     type="text"
-                    {...(register("expiry"), { required: true })}
+                    {...register("expiry", { required: true })}
                   />
                 </span>
               </div>
